@@ -1,0 +1,8 @@
+:root {
+    --light1: rgb(204, 218, 209);
+    --light2: rgb(156, 174, 169);
+    --light3:rgb(120, 133, 133);
+    --dark1: rgb(111, 104, 102);
+    --dark2: rgb(56, 48,46);
+    --border-radius: 0.2rem;
+}
