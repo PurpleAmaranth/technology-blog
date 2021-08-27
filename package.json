@@ -1,18 +1,16 @@
 {
-  "name": "technology-blog",
+  "name": "tech-blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "seed": "node seeds/seed.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coding-boot-camp/module-14-project-mvc.git"
   },
-  "author": "PurpleAmaranth",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/coding-boot-camp/module-14-project-mvc/issues"
@@ -29,4 +27,3 @@
     "sequelize": "^5.21.2"
   }
 }
-
