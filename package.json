@@ -1,5 +1,5 @@
 {
-  "name": "tech-blog",
+  "name": "technology-blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/coding-boot-camp/module-14-project-mvc.git"
   },
-  "author": "",
+  "author": "PurpleAmaranth",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/coding-boot-camp/module-14-project-mvc/issues"
