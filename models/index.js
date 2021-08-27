@@ -4,5 +4,26 @@
 //each individual js in this folder is a table.
 
 const User = require('./User');
+const Post = require('./Post');
+const Comment = require('./Comment');
 
-module.exports = { User };
+Post.belongsTo(User, {
+  foreignKey: 'userId',
+  onDelete: 'CASCADE'
+});
+
+Post.hasMany(Comment, {
+  foreignKey: 'postId',
+  onDelete: 'CASCADE'
+});
+
+Comment.belongsTo(User, {
+  foreignKey: 'userId',
+  onDelete: 'CASCADE'
+});
+
+module.exports = {
+  User,
+  Comment,
+  Post
+};
