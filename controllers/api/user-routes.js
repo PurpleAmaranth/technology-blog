@@ -29,14 +29,14 @@ router.post('/login', async (req, res) => {
     });
 
     if (!user) {
-      res.status(400).json({ message: 'No user account found!' });
+      res.status(400).json({ message: 'User account does not exist.' });
       return;
     }
 
     const validPassword = user.checkPassword(req.body.password);
 
     if (!validPassword) {
-      res.status(400).json({ message: 'No user account found!' });
+      res.status(400).json({ message: 'User account does not exist.' });
       return;
     }
 
@@ -45,10 +45,10 @@ router.post('/login', async (req, res) => {
       req.session.username = user.username;
       req.session.loggedIn = true;
 
-      res.json({ user, message: 'You are now logged in!' });
+      res.json({ user, message: 'Login successful.' });
     });
   } catch (err) {
-    res.status(400).json({ message: 'No user account found!' });
+    res.status(400).json({ message: 'User account does not exist.' });
   }
 });
 
